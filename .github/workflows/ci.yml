@@ -1,0 +1,14 @@
+name: CI
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - run: df -m
+    - run: du -sm /usr/local/lib/* $ANDROID_HOME/* /usr/local/share/* /opt/*
+
+
