@@ -9,7 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: df -m
-    - run: du -sm $ANDROID_HOME/*
-    - run: du -sm /usr/local/lib/* /usr/local/share/* /opt/*
+    - run: du -sm /usr/share/dotnet /opt/ghc /opt/hostedtoolcache/CodeQL
 
 
